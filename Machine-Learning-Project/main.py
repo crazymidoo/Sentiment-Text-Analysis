@@ -15,3 +15,7 @@ print(text)
 blob = TextBlob(text)
 sentiment = blob.sentiment.polarity # -1 to 1
 print("Sentiment Polarity: " + str(sentiment))
+
+# -1.0 → molto negativo
+# 0.0 → neutro
+# +1.0 → molto positivo
