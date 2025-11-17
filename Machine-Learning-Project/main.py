@@ -12,8 +12,6 @@ article.nlp()
 text = article.summary
 print(text)
 
-###AGGIUNGERE IF COSI MI DICE DIRETTAMENTE SE IL SENTIMENT = POSITIVO, NEGATIVO O NEUTRO E NON POLARITY 
-
 blob = TextBlob(text)
 sentiment = blob.sentiment.polarity # -1 to 1
 print("Sentiment Polarity: " + str(sentiment))
