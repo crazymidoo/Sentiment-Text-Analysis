@@ -1,7 +1,7 @@
 from textblob import TextBlob
 from newspaper import Article
 
-url = 'https://it.wikipedia.org/wiki/Matematica'
+url = 'https://www.milanotoday.it/video/video-esercitazione-passante-novembre-2025.html'
 article = Article(url)
 
 article.download()
@@ -13,4 +13,4 @@ print(text)
 
 blob = TextBlob(text)
 sentiment = blob.sentiment.polarity # -1 to 1
-print(sentiment)
+print("Sentiment Polarity: " + str(sentiment))
