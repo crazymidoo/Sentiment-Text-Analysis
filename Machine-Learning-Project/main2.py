@@ -1,5 +1,4 @@
 ## Sentiment Analysis From a Text (text.txt)
-
 from textblob import TextBlob
 from googletrans import Translator
 
@@ -14,7 +13,7 @@ print("Translated:", eng)
 
 # Sentiment in inglese
 blob_eng = TextBlob(eng)
-print("Sentiment (EN):", blob_eng.sentiment.polarity)
+print("Sentiment: ", blob_eng.sentiment.polarity)
 
 # -1.0 → molto negativo
 # 0.0 → neutro
